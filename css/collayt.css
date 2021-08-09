@@ -1,0 +1,19 @@
+.tooltip .tooltiptext3 {
+  	visibility: hidden;
+  	text-align: center;
+  	border-radius: 6px;
+  	border: 1px dotted rgba(255, 255, 255, 0.4);
+	background-color:#202020;
+  	padding: 5px;
+  
+  	/* Position the tooltip */
+  	position: absolute;
+  	z-index: 1;
+  	left: 60%;
+  	width:50%;
+  	top:-300%;
+}
+
+.tooltip:hover .tooltiptext3 {
+  	visibility: visible;
+}

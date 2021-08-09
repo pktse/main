@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> patricia tse </title>
+        <link rel = "stylesheet" href = "css/general_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+        <script src = "js/portfolio_script.js"> </script>
+        <script type="text/javascript">
+        function codeAddress() {
+            filterSelection("all");
+        }
+        window.onload = codeAddress;
+        </script>
+    </head>
+
+
+    <body>
+
+    &lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
+    <br>
+    &lt;!<span class = "pink">html</span>&gt;
+
+    <div class = "content">
+    &lt;<span class = "pink">head</span>&gt;
+    <div class = "content">
+        &lt;<span class = "pink">title</span>&gt; patricia tse &lt;/<span class = "pink">title</span>&gt;
+        <br>
+        <a href = "#aboutMe">
+            &lt;<span class = "pink">link</span> <span class = "green">rel</span> = <span class = "yellow"> "about
+            me"</span> <span class = "green">href</span> = <span class = "yellow"> "#aboutMe"</span>&gt;
+        </a>
+        <br>
+
+        <a href = "#projects">
+            &lt;<span class = "pink">link</span> <span class = "green">rel</span> = <span class = "yellow"> "my
+            projects"</span> <span class = "green">href</span> = <span class = "yellow"> "#projects"</span>&gt;
+        </a>
+        <br>
+
+        <a href = "images/resume.pdf" target="_blank" download>
+            &lt;<span class = "pink">link</span> <span class = "green">rel</span> = <span class = "yellow"> "my
+            resume"</span> <span class = "green">href</span> = <span class = "yellow"> "resume.pdf"</span>&gt;
+        </a>
+        <br>
+
+        <a href = "#contact">
+            &lt;<span class = "pink">link</span> <span class = "green">rel</span> = <span class = "yellow"> "contact
+            me"</span> <span class = "green">href</span> = <span class = "yellow"> "#contact"</span>&gt;
+        </a> 
+        <br>
+
+        <div class = "tooltip">
+            <a>
+                &lt;<span class = "pink">link</span> <span class = "green">rel</span> = <span class = "yellow"> "fun
+                stuff"</span> <span class = "green">href</span> = <span class = "yellow"> "hobbies"</span>&gt;
+            </a> 
+
+            <span class = "tooltiptext">
+                <a href="portfolio/music.html" ><span class = "yellow">"music.html"</span></a>
+                <a href="portfolio/art.html" ><span class = "yellow">"art.html"</span></a>
+            </span>
+        </div>
+    </div>
+    &lt;/<span class = "pink">head</span>&gt;
+    <br>
+
+    &lt;<span class = "pink">body</span>&gt;
+    <div class = "content">
+        <span id = "aboutMe"> 
+            &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "aboutMe"</span>&gt;
+            <div class = "content"> 
+                hello, i'm patricia, a junior at uc berkeley studying computer science! i'm passionate about solving
+                problems by using computer programming to abstract and break down those complex problems into simple
+                concepts.
+                <br>&lt;<span class = "pink">br</span>&gt;<br>  
+                i spent this past summer interning with alexa shopping at amazon as an sde intern. during the school
+                year, you can find me teaching cs to kids with juni learning and doing full-stack work with Sotira.
+                <br>&lt;<span class = "pink">br</span>&gt;<br> 
+                outside of school and work, i enjoy skating, drawing, and hanging out with friends. :)
+            </div>
+            &lt;/<span class = "pink">p</span>&gt;  
+        </span>
+        <br>
+        <br>
+
+        <span id = "projects"> 
+            &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "projects"</span>&gt;
+            <div class = "content"> 
+                here are some of the current projects that i'm recenlty been working on: <br>
+                filter by: 
+                <span id = "portfolioFilter">
+                    <a class="filter" onclick="filterSelection('general')" >programming</a>, 
+                    <a class="filter" onclick="filterSelection('design')" >design</a>, 
+                    <a class="filter" onclick="filterSelection('data')"  data-filter = ".data">data</a>, 
+                    <a class="filter active" onclick="filterSelection('all')"  data-filter = "*">all projects</a>
+                </span>
+                <br>
+                &lt;<span class = "pink">ul</span>&gt;
+                <div class = "content"> 
+
+
+                <div class = "tooltip">
+                    <a class = "filterDiv general" href = "portfolio/sotira.html">
+                        &lt;<span class = "pink">li</span>&gt;sotira&lt;/<span class = "pink">li</span>&gt;</a>
+
+                    <span class = "tooltiptext2">
+                        i'm currently a full-stack developer at sotira, a fintech stealth startup.
+                        <br>
+                        <img src="images/portfolio/sotira.png" class="image">
+                    </span>
+                </div>
+                <br>
+
+
+                <div class = "tooltip">
+                    <a class = "filterDiv general design" href = "portfolio/collayt.html" >
+                        &lt;<span class = "pink">li</span>&gt;collayt&lt;/<span class = "pink">li</span>&gt;</a>
+
+                    <span class = "tooltiptext2">
+                        i'm a full-stack developer and ui/ux designer for collayt, a student-built networking platform.
+                        <br>
+                        <img src="images/portfolio/collayt.png" class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class = "tooltip">
+                    <a class = "filterDiv general data" href = "portfolio/pbl.html" >
+                        &lt;<span class = "pink">li</span>&gt;phi beta lambda&lt;/<span class = "pink">li</span>&gt;</a>
+
+                    <span class = "tooltiptext2">
+                        i was a tech fall analyst for phi beta lambda, a chapter of future business leaders of
+                        america-phi beta lambda
+                        <br>
+                        <img src="images/portfolio/PBL.png" class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class = "tooltip">
+                    <a class = "filterDiv general design" href = "portfolio/rcsa.html" >
+                        &lt;<span class = "pink">li</span>&gt;rcsa&lt;/<span class = "pink">li</span>&gt;</a>
+
+                    <span class = "tooltiptext2">
+                        i'm currently one of the web development committee coordinators for regents' and chancellor's
+                        scholar association.
+                        <br>
+                        <img src="images/portfolio/RCSA.png" class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class = "tooltip">
+                    <a class = "filterDiv design" href = "portfolio/taug.html" >
+                        &lt;<span class = "pink">li</span>&gt;taug&lt;/<span class = "pink">li</span>&gt;</a>
+
+                    <span class = "tooltiptext2">
+                        i'm currently head of design for taug, a christian journal at uc berkeley
+                    </span>
+                </div>
+                <br>
+
+                <a href = "archive.html" >&lt;<span class = "pink">li</span>&gt;archive&lt;/<span class = "pink">li</span>&gt;</a>
+                </div>
+                &lt;/<span class = "pink">ul</span>&gt;
+            </div>
+            &lt;/<span class = "pink">p</span>&gt;  
+        </span>
+        <br>
+        <br>
+
+
+        <span id = "contact"> 
+            &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "contact"</span>&gt;
+            <div class = "content"> 
+                i would love to get connected! The best way to contact me is through email, so feel free to contact
+                me @: <br>
+                &lt;<span class = "pink">ul</span>&gt;
+                <div class = "content"> 
+                    <a href = "mailto:patriciaktse@berkeley.edu">
+                        &lt;<span class = "pink">li</span>&gt;email&lt;/<span class = "pink">li</span>&gt;</a>
+                    <br>
+                    <a href = "https://www.linkedin.com/in/patriciaktse/" target="_blank" >
+                        &lt;<span class = "pink">li</span>&gt;linkedIn&lt;/<span class = "pink">li</span>&gt;</a>
+                    <br>
+                    <a href = "https://www.facebook.com/pkytse/" target="_blank" >
+                        &lt;<span class = "pink">li</span>&gt;facebook&lt;/<span class = "pink">li</span>&gt;</a>
+                    <br>
+                    <a href = "https://github.com/pktse" target="_blank" >
+                        &lt;<span class = "pink">li</span>&gt;github&lt;/<span class = "pink">li</span>&gt;</a>
+                </div>
+                &lt;/<span class = "pink">ul</span>&gt;
+            </div>
+            &lt;/<span class = "pink">p</span>&gt;  
+        </span>
+
+
+    </div>
+    &lt;/<span class = "pink">body</span>&gt;
+
+    </div>
+
+    &lt;/<span class = "pink">html</span>&gt;
+    </body>
+
+</html>

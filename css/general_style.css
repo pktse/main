@@ -1,0 +1,131 @@
+body {
+	font-family: 'JetBrains Mono', monospace;
+	color:white;
+	background-color:#202020;
+	width:82%;
+}
+
+.image {
+    width: 100%;
+}
+
+a {
+  	text-decoration: none;
+  	border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+  	display: inline-block;
+  	color:white;
+}
+
+a:hover{
+	color:cyan;
+	opacity:100%;
+}
+
+a:hover .pink {
+	color:cyan;
+}
+
+a:hover .green {
+	color:cyan;
+}
+
+a:hover .yellow {
+	color:cyan;
+}
+
+a:hover .purple {
+	color:cyan;
+}
+
+.tag {
+	color:yellow;
+}
+
+.content {
+	padding-left: 3%;
+}
+
+.pink {
+	color:deeppink;
+}
+
+.green {
+	color:chartreuse;
+}
+
+.yellow {
+	color:yellow;
+}
+
+.purple {
+	color:blueviolet;
+}
+
+.tooltip {
+  	position: relative;
+  	display: inline-block;
+  	/*border-bottom: 1px dotted black;*/
+  	width:100%;
+}
+
+.tooltip .tooltiptext {
+  	visibility: hidden;
+  	text-align: center;
+  	border-radius: 6px;
+  	border: 1px dotted rgba(255, 255, 255, 0.4);
+	background-color:#202020;
+  	padding: 5px;
+  
+  	/* Position the tooltip */
+  	position: absolute;
+  	z-index: 1;
+  	left: 25%;
+  	width:11%;
+}
+
+.tooltip .tooltiptext2 {
+  	visibility: hidden;
+  	text-align: center;
+  	border-radius: 6px;
+  	border: 1px dotted rgba(255, 255, 255, 0.4);
+	background-color:#202020;
+  	padding: 5px;
+  
+  	/* Position the tooltip */
+  	position: absolute;
+  	z-index: 1;
+  	left: 30%;
+  	width:50%;
+  	top:-300%;
+}
+
+.tooltip:hover .tooltiptext {
+  	visibility: visible;
+}
+
+.tooltip:hover .tooltiptext2 {
+  	visibility: visible;
+}
+
+#portfolioFilter a{
+	opacity:20%;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
+
+#portfolioFilter a:hover{
+	opacity:100%;
+}
+
+#portfolioFilter a.active {
+	opacity:100%;
+	border-bottom: 0px dotted rgba(255, 255, 255, 0.4);
+}
+
+.filterDiv {
+	opacity:20%;
+}
+
+.show {
+	opacity:100%;
+}
+
