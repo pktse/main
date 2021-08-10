@@ -2,86 +2,111 @@
 <html>
 <head>
 	<title> taug </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt; to an unknown god&lt;/<span
-			class =
-					"pink">title</span>&gt;
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
 		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">
-			associate designer (spring 2020)
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; to an unknown god&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="loader"
+				     class="center"></div>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			head of design (fall 2020 - present)
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			to an unknown god (taug) is uc berkeley’s first student-run christian journal. every semester, taug
-			publishes a magazine with writing and artwork produced by cal students, hoping to foster dialogue both
-			between christians and with students of other faiths and philosophies.
-			<br>
-			checkout our website <a href = "https://toanunknowngod.weebly.com/"> here </a> and our publications <a href = "https://issuu.com/unknowngodjournal">here</a>
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					associate designer (spring 2020)
+					<br>
+					head of design (fall 2020 - present)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					to an unknown god (taug) is uc berkeley’s first student-run christian journal. every semester, taug
+					publishes a magazine with writing and artwork produced by cal students, hoping to foster dialogue
+					both
+					between christians and with students of other faiths and philosophies.
+					<br>
+					checkout our website <a href="https://toanunknowngod.weebly.com/"> here </a> and our publications
+					<a href="https://issuu.com/unknowngodjournal">here</a>
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
 
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "roles
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "roles
 		"</span>&gt;
-		<div class = "content">
-			as a designer, my role included:
-			<br>
-			&lt;<span class = "pink">ul</span>&gt;
-			<div class = "content">
-				&lt;<span class = "pink">li</span>&gt;edited magazine layouts using adobe inDesign
-					&lt;/<span class = "pink">li</span>&gt;
-				<br>
-				&lt;<span class = "pink">li</span>&gt;created designs for stickers, shirts + hoodies using adobe
-				illustrator
-				&lt;/<span class = "pink">li</span>&gt;
-				<br>
+				<div class="content">
+					as a designer, my role included:
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+						&lt;<span class="pink">li</span>&gt;edited magazine layouts using adobe inDesign
+						&lt;/<span class="pink">li</span>&gt;
+						<br>
+						&lt;<span class="pink">li</span>&gt;created designs for stickers, shirts + hoodies using adobe
+						illustrator
+						&lt;/<span class="pink">li</span>&gt;
+						<br>
 
-				&lt;<span class = "pink">li</span>&gt;used adobe lightroom to edit images used for magazines
-				&lt;/<span class = "pink">li</span>&gt;
+						&lt;<span class="pink">li</span>&gt;used adobe lightroom to edit images used for magazines
+						&lt;/<span class="pink">li</span>&gt;
+
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
 
 			</div>
-			&lt;/<span class = "pink">ul</span>&gt;
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>

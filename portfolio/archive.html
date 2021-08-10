@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> archive </title>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/portfolio_script.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../js/sideNav.js"></script>
+</head>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+        $('#nav-container').load('../nav.html');
+        });
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+
+
+</script>
+
+
+<body>
+
+
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
+		<br>
+		&lt;!<span class="pink">html</span>&gt;
+
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; archive &lt;/<span class="pink">title</span>&gt;
+				<br>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
+			<br>
+
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+        <span id="projects">
+            &lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "projects"</span>&gt;
+            <div class="content">
+                here are some of the current projects that i had previously worked on: <br>
+                filter by:
+                <span id="portfolioFilter">
+                    <a class="filter"
+                       onclick="filterSelection('general')">programming</a>,
+                    <a class="filter"
+                       onclick="filterSelection('engineering')">engineering</a>,
+                    <a class="filter"
+                       onclick="filterSelection('design')">design</a>,
+                    <a class="filter"
+                       onclick="filterSelection('data')"
+                       data-filter=".data">data</a>,
+                    <a class="filter active"
+                       onclick="filterSelection('all')"
+                       data-filter="*">all projects</a>
+                </span>
+                <br>
+                &lt;<span class="pink">ul</span>&gt;
+                <div class="content">
+
+
+                <div class="tooltip">
+                    <a class="filterDiv general engineering"
+                       href="algorithms.html">
+                        &lt;<span class="pink">li</span>&gt;lwhs - algorithm: 2019&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took an algorithms course at my high school where i used rhino, 3d printing, and
+                        grasshopper to generate designs.
+                        <br>
+                        <img src="../images/portfolio/algorithm2.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+
+                <div class="tooltip">
+                    <a class="filterDiv engineering"
+                       href="wood.html">
+                        &lt;<span class="pink">li</span>&gt;lwhs - joinery + turning: 2019&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took a joinery and turning class in high school where we did woodworking.
+                        <br>
+                        <img src="../images/portfolio/turning2.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv general design"
+                       href="git.html">
+                        &lt;<span class="pink">li</span>&gt;girls in tech: 2018-2019&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i was a member and then co-president of the girls in tech club. during my time, we took part
+                        in the technovation competition.
+                        <br>
+                        <img src="../images/portfolio/GIT.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv general data engineering"
+                       href="gwc.html">
+                        &lt;<span class="pink">li</span>&gt;girls who code - sip: 2018&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took part in the girls who code summer immersion program.
+                        <br>
+                        <img src="../images/portfolio/GWC2.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv design"
+                       href="hyphen-hacks.html">
+                        &lt;<span class="pink">li</span>&gt;hyphen-hacks&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i was head of design for the planning committee of the hyphen-hacks hackathon.
+                        <br>
+                        <img src="../images/portfolio/HH2.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv engineering"
+                       href="kinetics.html">
+                        &lt;<span class="pink">li</span>&gt;lwhs - kinetics: 2018&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took a metal-working kinetics course at my high school.
+                        <br>
+                        <img src="../images/portfolio/kinetics.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv general engineering"
+                       href="circuits.html">
+                        &lt;<span class="pink">li</span>&gt;lwhs - circuits: 2016-2017&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took a circuits course in high school and soldered + built a solar-powered charging station
+                        and bluetooth speaker.
+                        <br>
+                        <img src="../images/portfolio/circuits.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                <div class="tooltip">
+                    <a class="filterDiv engineering"
+                       href="computing.html">
+                        &lt;<span class="pink">li</span>&gt;lwhs - computing: 2016-2017&lt;/<span class="pink">li</span>&gt;</a>
+
+                    <span class="tooltiptext3">
+                        i took a computing course in high school and learned the fundamentals of computer programming.
+                        <br>
+                        <img src="../images/portfolio/Computing.png"
+                             class="image">
+                    </span>
+                </div>
+                <br>
+
+                </div>
+                &lt;/<span class="pink">ul</span>&gt;
+            </div>
+            &lt;/<span class="pink">p</span>&gt;
+        </span>
+
+			</div>
+			&lt;/<span class="pink">body</span>&gt;
+
+		</div>
+
+		&lt;/<span class="pink">html</span>&gt;
+	</div>
+</div>
+</body>
+
+</html>

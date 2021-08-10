@@ -2,149 +2,184 @@
 <html>
 <head>
 	<title> computing </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt; lick wilmerding high School - technical arts : computing&lt;/<span
-			class =
-					"pink">title</span>&gt;
+
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
 		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">
-			computing 1: computational design (fall 2016)
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; lick wilmerding high School - technical arts :
+				computing&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			computing 2: concepts and public purpose program (spring 2017)
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			i took two semester long courses focused on computer science in my sophomore year at lick-wilmerding high school.
-			both computing 1 and computing 2 are semester-long techincal arts courses offered at lwhs. in these
-			classes, we learned about the basics of computer science through scratch and p5 (javascript). we
-			generated visual art, designed textiles, created animations, made custom software, and physically
-			fabricated our designs on machines like the laser cutter, 3d printer, and cnc mill.
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			in both classes, we practiced collaboration; many of our large projects required that we work in group
-			or pairs, preparing us for the culture at jobs where people work in teams to create awesome products. we
-			also had to learn about ui/ux, communication with clients and overall planning.
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					computing 1: computational design (fall 2016)
+					<br>
+					computing 2: concepts and public purpose program (spring 2017)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					i took two semester long courses focused on computer science in my sophomore year at lick-wilmerding
+					high school.
+					both computing 1 and computing 2 are semester-long techincal arts courses offered at lwhs. in these
+					classes, we learned about the basics of computer science through scratch and p5 (javascript). we
+					generated visual art, designed textiles, created animations, made custom software, and physically
+					fabricated our designs on machines like the laser cutter, 3d printer, and cnc mill.
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					in both classes, we practiced collaboration; many of our large projects required that we work in
+					group
+					or pairs, preparing us for the culture at jobs where people work in teams to create awesome
+					products. we
+					also had to learn about ui/ux, communication with clients and overall planning.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
 
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "projects
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "projects
 		"</span>&gt;
-		<div class = "content">
-			here are the projects i worked on (click to see process, hover to see summary):
-			<br>
-			&lt;<span class = "pink">ul</span>&gt;
-			<div class = "content">
+				<div class="content">
+					here are the projects i worked on (click to see process, hover to see summary):
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
 
-				<div class = "tooltip">
-					<a>&lt;<span class = "pink">li</span>&gt;
-						p5 shapes practice project (no process link)
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;
+								p5 shapes practice project (no process link)
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br>
 						For the p5 shapes practice project, we practiced creating various shapes i p5 with varying
 						sizes, colors, and line weight to get comfortable with using p5 and build our foundation of javascript
-                      <img src="../images/Computing/shapes.png" class = "image">
+                      <img src="../images/Computing/shapes.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
-				<div class = "tooltip">
-					<a>&lt;<span class = "pink">li</span>&gt;p5 animation project (no process link)
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						</div>
+						<br>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;p5 animation project (no process link)
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br> for the p5 animation project, we  began to experiment with conditionals, functions, and
 						loops in p5. with the animation project, not only did we apply what we learned from previous
 						assignments by creating shapes, but we also had to apply new ideas like conditionals.
-                      <img src="../images/Computing/animation.png" class = "image">
+                      <img src="../images/Computing/animation.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
-				<div class = "tooltip">
-					<a href = "https://docs.google.com/presentation/d/e/2PACX-1vT4gVXTOZUplA5Tpu92lTrBY_1d1hedE0oY9TR_-IjRkD1v0B08t_IfXn3VsQdEbKvkoniPwjpmwAQq/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						explorable explanation project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						</div>
+						<br>
+						<div class="tooltip">
+							<a href="https://docs.google.com/presentation/d/e/2PACX-1vT4gVXTOZUplA5Tpu92lTrBY_1d1hedE0oY9TR_-IjRkD1v0B08t_IfXn3VsQdEbKvkoniPwjpmwAQq/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								explorable explanation project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br> for the explorable explanation project, we were prompted to design and program a digital
 						learning app that enables a learner to explore a topic of our choice. we were required to
 						include: objects, html / user interface elements, data/apis, and/or sound. i decided to make
 						an rpg game that is about the life of a factory worker since we were learning about the
 						industrialization in history class.
-                      <img src="../images/Computing/log10.png" class = "image">
+                      <img src="../images/Computing/log10.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
-				<div class = "tooltip">
-					<a href = "https://docs.google.com/presentation/d/e/2PACX-1vSxGOpoSuJWcQfd2GLXE-LxKxBnnNVyb1jySjyhLp09fyI-iLpKfKO24ivloOEwlxSp5lQ2FBKYjCDz/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						make it parametric project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						</div>
+						<br>
+						<div class="tooltip">
+							<a href="https://docs.google.com/presentation/d/e/2PACX-1vSxGOpoSuJWcQfd2GLXE-LxKxBnnNVyb1jySjyhLp09fyI-iLpKfKO24ivloOEwlxSp5lQ2FBKYjCDz/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								make it parametric project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br> for the make it parametric project, we were required to work in groups to write a
 						program that generates a parametric (customizable) 3d or 2d object using openJSCAD, a
 						parametric modeling library for javascript. The project had to have 4 user-editable
 						parameters. our group decided to make a customizable bracelet with a customizable metal plate.
-                      <img src="../images/Computing/plate1.png" class = "image">
+                      <img src="../images/Computing/plate1.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
-				<div class = "tooltip">
-					<a href = "https://docs.google.com/presentation/d/e/2PACX-1vRrgBUTmuFkGIZyU6qREGgCEa_eI98lpuun6Nu2E5HqyqTl-Pz8GPVaGstyoFmpSNQKef4dntGcXqH_/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						textile project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						</div>
+						<br>
+						<div class="tooltip">
+							<a href="https://docs.google.com/presentation/d/e/2PACX-1vRrgBUTmuFkGIZyU6qREGgCEa_eI98lpuun6Nu2E5HqyqTl-Pz8GPVaGstyoFmpSNQKef4dntGcXqH_/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								textile project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br> for the textile project, we used p5 javascript to write a program that generates a
 						design to print on fabric, then use that fabric to make something. i created a peony pattern
 						and used the design to make an apron
-                      <img src="../images/Computing/computing.png" class = "image">
+                      <img src="../images/Computing/computing.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
+
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
 
 			</div>
-			&lt;/<span class = "pink">ul</span>&gt;
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>

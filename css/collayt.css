@@ -9,8 +9,8 @@
   	/* Position the tooltip */
   	position: absolute;
   	z-index: 1;
-  	left: 60%;
-  	width:50%;
+  	left: 40vh;
+  	width:30vh;
   	top:-300%;
 }
 

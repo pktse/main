@@ -2,132 +2,167 @@
 <html>
 <head>
 	<title> kinetics </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt; lick wilmerding high School - technical arts : kinetics&lt;/<span
-			class =
-					"pink">title</span>&gt;
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
 		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">
-			metal fabrications: kinetics (fall 2018)
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			metal fabrications: kinetics is a semester-long techincal arts course offered at lick-wilmerding high
-			school. i took this class during the fall semester of my junior year. in the
-			class, we learned about pneumatics, hydraulics, and simple machines like levers and pulleys. this class
-			mainly focused on the mechanics of motion, looking at concepts like gears, cams, levers, and linkages,
-			and taught me how I could use these to create mechanical advantage.
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			not only did I learn a lot, but I was also able to have a lot of freedom with many of the choices I made
-			- I chose what materials to work with, what concepts I wish to use, and what final project I wanted to
-			complete. because this course is so focused on kinetics and motion, I was able to apply what I learned in
-			my physics course into the designing phase of my assignments.
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
-
-
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "projects
-		"</span>&gt;
-		<div class = "content">
-			here are the projects i worked on (click to see process, hover to see summary):
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; lick wilmerding high School - technical arts :
+				kinetics&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			&lt;<span class = "pink">ul</span>&gt;
-			<div class = "content">
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					metal fabrications: kinetics (fall 2018)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					metal fabrications: kinetics is a semester-long techincal arts course offered at lick-wilmerding
+					high
+					school. i took this class during the fall semester of my junior year. in the
+					class, we learned about pneumatics, hydraulics, and simple machines like levers and pulleys. this
+					class
+					mainly focused on the mechanics of motion, looking at concepts like gears, cams, levers, and
+					linkages,
+					and taught me how I could use these to create mechanical advantage.
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					not only did I learn a lot, but I was also able to have a lot of freedom with many of the choices I
+					made
+					- I chose what materials to work with, what concepts I wish to use, and what final project I wanted
+					to
+					complete. because this course is so focused on kinetics and motion, I was able to apply what I
+					learned
+					in
+					my physics course into the designing phase of my assignments.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
-				<div class = "tooltip">
-					<a
-							href =
-					"https://docs.google.com/presentation/d/e/2PACX-1vQQoNgEQyK7QWGn7WQQxSEAfjkMT2F0AslaKfnvo6xqg8YMWzH0tjSNve622MubFmjcvFIuGW9_zLTU/pub?start=false&loop=false&delayms=3000" target=”_blank”>&lt;<span class = "pink">li</span>&gt;
-						pinewood derby car
-						&lt;/<span class = "pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "projects
+		"</span>&gt;
+				<div class="content">
+					here are the projects i worked on (click to see process, hover to see summary):
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+
+						<div class="tooltip">
+							<a
+									href=
+											"https://docs.google.com/presentation/d/e/2PACX-1vQQoNgEQyK7QWGn7WQQxSEAfjkMT2F0AslaKfnvo6xqg8YMWzH0tjSNve622MubFmjcvFIuGW9_zLTU/pub?start=false&loop=false&delayms=3000"
+									target=”_blank”>&lt;<span class="pink">li</span>&gt;
+								pinewood derby car
+								&lt;/<span class="pink">li</span>&gt;</a>
+
+							<span class="tooltiptext3">
 						<br>
 						for the pinewood derby car project, my partner and I researched designs, then applied what we
 						learned, by spending the rest of the class sketching rough drafts. we then discussed the
 						designs and spent the next two classes cutting, sanding, and putting our derby car together
 						using redwood, dowels, and mdf. we were able to place 3rd.
-                      <img src="../images/kinetics/car.png" class = "image">
+                      <img src="../images/kinetics/car.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
-				<div class = "tooltip">
-					<a href =
-							   "https://docs.google.com/presentation/d/e/2PACX-1vTu1i_cAEMcHvfG37rKzqk4N42DgQX-qzFqXliptGHZKbgHa73DHnaE5tZf-YJJ53-hpbnSek9jNpZh/pub?start=false&loop=false&delayms=3000" target = "_blank">&lt;<span class = "pink">li</span>&gt;
-						pneumatics, hydralics, and linkages projects
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a href=
+									   "https://docs.google.com/presentation/d/e/2PACX-1vTu1i_cAEMcHvfG37rKzqk4N42DgQX-qzFqXliptGHZKbgHa73DHnaE5tZf-YJJ53-hpbnSek9jNpZh/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								pneumatics, hydralics, and linkages projects
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br>
 						for the pneumatics, hydralics, and linkages projects, my partner and I were prompted to
 						create a machine that would go up a metal ramp and knock down a pile of blocks. we
 						researched, prototyped, and built our design in 5 classes. we used a bell crank which can
 						change the angel of motion (input, output) to move the wheels. we then used pneumatics to
 						move linkages and to lift the machine up and down to reset the syringe that will move the linkage.
-                      <img src="../images/kinetics/ramp.png" class = "image">
+                      <img src="../images/kinetics/ramp.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
-				<div class = "tooltip">
-					<a href =
-							   "https://docs.google.com/presentation/d/e/2PACX-1vSRwPblveWGJ3y8ZcLpbWiFuag1haN1520uxENRekp-Xdr5oSiFxJk3Ril43UXRz5SiJYOY-iwPKAPJ/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						final project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a href=
+									   "https://docs.google.com/presentation/d/e/2PACX-1vSRwPblveWGJ3y8ZcLpbWiFuag1haN1520uxENRekp-Xdr5oSiFxJk3Ril43UXRz5SiJYOY-iwPKAPJ/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								final project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br>
 						for our final projects, we were tasked to create anything we wanted as long as we applied one
 						of the following materials we learned from class. i decided to create a kinetic sculpture
 						that used gears. It would also have multiple cnc parts (laser cut), and be motor-driven. i used
 						mdf, clear acrylic, acrylic dowell, and a motor.
-                      <img src="../images/kinetics/metal.png" class = "image">
+                      <img src="../images/kinetics/metal.png"
+                           class="image">
                     </span>
+						</div>
+						<br>
+
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
 				</div>
-				<br>
+				&lt;/<span class="pink">p</span>&gt;
 
 			</div>
-			&lt;/<span class = "pink">ul</span>&gt;
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>

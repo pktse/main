@@ -10,8 +10,8 @@
   	/* Position the tooltip */
   	position: absolute;
   	z-index: 1;
-  	left: 40%;
-  	width:50%;
+  	left: 30vh;
+  	width:50vh;
   	top:-500%;
 }
 

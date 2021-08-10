@@ -2,72 +2,104 @@
 <html>
 <head>
 	<title> music </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt; music&lt;/<span
-			class =
-					"pink">title</span>&gt;
-		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">having taken piano classes for 6 years, I also dabble a
-			bit in music. with my foundations in piano, i am also a self-taught guitarist and violinist (albiet not
-			the best). if i have time, i also enjoy doing original compositions, whether that be recording an improv
-			session or slapping random things together on garageband.
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
 
-
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "playlist
-		"</span>&gt;
-		<div class = "content">
-			Playlist of original compositions (w original artwork):
-			</p>
-			&lt;<span class = "pink">iframe</span>&gt;
-			<br>
-			<div class = "content">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLneOyrAklfi7JnWiNg31e0Mfh91vPNBiT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
+		<br>
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; music&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="loader"
+				     class="center"></div>
+				<div id="nav-container"></div>
 			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			&lt;/<span class = "pink">iframe</span>&gt;
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">having taken piano classes for 6 years, I also dabble a
+					bit in music. with my foundations in piano, i am also a self-taught guitarist and violinist (albiet
+					not
+					the best). if i have time, i also enjoy doing original compositions, whether that be recording an
+					improv
+					session or slapping random things together on garageband.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
+
+
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "playlist
+		"</span>&gt;
+				<div class="content">
+					Playlist of original compositions (w original artwork):
+					</p>
+					&lt;<span class="pink">iframe</span>&gt;
+					<br>
+					<div class="content">
+						<iframe width="560"
+						        height="315"
+						        src="https://www.youtube.com/embed/videoseries?list=PLneOyrAklfi7JnWiNg31e0Mfh91vPNBiT"
+						        frameborder="0"
+						        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						        allowfullscreen></iframe>
+					</div>
+					<br>
+					&lt;/<span class="pink">iframe</span>&gt;
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+
+			</div>
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>

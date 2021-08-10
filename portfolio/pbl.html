@@ -1,168 +1,208 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> pbl </title>
-        <link rel = "stylesheet" href = "../css/general_style.css">
-        <link rel = "stylesheet" href = "../css/collayt.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    </head>
+<head>
+	<title> pbl </title>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/collayt.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
 
-      <script type="text/javascript">
+<script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
 
 
-    <body>
-      &lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-      <br>
-      &lt;!<span class = "pink">html</span>&gt;
-      <div class = "content">
-        &lt;<span class = "pink">head</span>&gt;
-        <div class = "content">
-          &lt;<span class = "pink">title</span>&gt; pbl &lt;/<span class = "pink">title</span>&gt;
-          <br>
-          <div id="loader" class="center"></div> 
-          <div id="nav-container"></div>
-        </div>
-        &lt;/<span class = "pink">head</span>&gt;
-        <br>
-        &lt;<span class = "pink">body</span>&gt;
-        <div class = "content">
-          &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-          <div class = "content"> 
-            tech fall analyst (fall 2019)
-            <br>&lt;<span class = "pink">br</span>&gt;<br>  
-            berkeley phi beta lambda (pbl) is a chapter of future business leaders of america-phi beta lambda, the
-              largest student business organization in the nation. pbl helps members build the necessary technical
-              and interpersonal skillset to succeed in wide range of business pursuits and intersections. within the
-              club, there are multiple committes.
-            <br>&lt;<span class = "pink">br</span>&gt;<br>  
-            the tech committee focuses on bridging the gap between software and business, providing a foundational
-              understanding of how technology works within corporations. through assignments, members are able to
-              develop their programming skills and apply it to professional settings.
-          </div>
-          &lt;/<span class = "pink">p</span>&gt;  
-        <br>
-        <br>
-
-        &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "role"</span>&gt;
-        <div class = "content"> 
-            my role included: <br>
-            &lt;<span class = "pink">ul</span>&gt;
-            <div class = "content"> 
-                &lt;<span class = "pink">li</span>&gt; using python and panda to analyze facebook data and apis and
-                draw correlations between usage and use &lt;/<span class = "pink">li</span>&gt;
-                <br>
-                &lt;<span class = "pink">li</span>&gt; applying knowledge of panda to machine learning, creating an
-                algorithm that predicts real estate prices &lt;/<span class = "pink">li</span>&gt;
-                <br>
-                &lt;<span class = "pink">li</span>&gt; creating an algorithm that would generate an optimal table of
-                time slots based on the preferences of members which was used by 65+
-                members &lt;/<span class ="pink">li</span>&gt;
-                <br>
-                &lt;<span class = "pink">li</span>&gt;  using selenium and web scraping to automate the process of
-                booking library study rooms &lt;/<span class = "pink">li</span>&gt;
-                <br>
-            </div>
-            &lt;/<span class = "pink">ul</span>&gt;
-        </div>
-        &lt;/<span class = "pink">p</span>&gt;  
-        <br>
-        <br>
+</script>
 
 
-        &lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "example work"</span>&gt;
-        <div class = "content"> 
-                here are some examples of the work i did during my time in pbl (hover to see): 
-                <br>
-                &lt;<span class = "pink">ul</span>&gt;
-                <div class = "content"> 
+<body>
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
+		<br>
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; pbl &lt;/<span class="pink">title</span>&gt;
+				<br>
+				<div id="loader"
+				     class="center"></div>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
+			<br>
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					tech fall analyst (fall 2019)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					berkeley phi beta lambda (pbl) is a chapter of future business leaders of america-phi beta lambda,
+					the
+					largest student business organization in the nation. pbl helps members build the necessary technical
+					and interpersonal skillset to succeed in wide range of business pursuits and intersections. within
+					the
+					club, there are multiple committes.
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					the tech committee focuses on bridging the gap between software and business, providing a
+					foundational
+					understanding of how technology works within corporations. through assignments, members are able to
+					develop their programming skills and apply it to professional settings.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;analyzed relation between iris type and petal length
-                        using python and panda&lt;/<span class = "pink">li</span>&gt;</a>
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "role"</span>&gt;
+				<div class="content">
+					my role included: <br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+						&lt;<span class="pink">li</span>&gt; using python and panda to analyze facebook data and apis
+						and
+						draw correlations between usage and use &lt;/<span class="pink">li</span>&gt;
+						<br>
+						&lt;<span class="pink">li</span>&gt; applying knowledge of panda to machine learning, creating
+						an
+						algorithm that predicts real estate prices &lt;/<span class="pink">li</span>&gt;
+						<br>
+						&lt;<span class="pink">li</span>&gt; creating an algorithm that would generate an optimal table
+						of
+						time slots based on the preferences of members which was used by 65+
+						members &lt;/<span class="pink">li</span>&gt;
+						<br>
+						&lt;<span class="pink">li</span>&gt; using selenium and web scraping to automate the process of
+						booking library study rooms &lt;/<span class="pink">li</span>&gt;
+						<br>
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
-                    <span class = "tooltiptext3">
-                        <img src="../images/pbl/download.png" style="width:102%;">
+
+				&lt;<span class="pink">p</span> <span class="green">id</span> =
+				<span class="yellow"> "example work"</span>&gt;
+				<div class="content">
+					here are some examples of the work i did during my time in pbl (hover to see):
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;analyzed relation between iris type and petal length
+								using python and panda&lt;/<span class="pink">li</span>&gt;</a>
+
+							<span class="tooltiptext3">
+                        <img src="../images/pbl/download.png"
+                             style="width:102%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
 
-                <div class = "tooltip">
-                  <a>&lt;<span class = "pink">li</span>&gt;used numpy and panda to do linear regression and estimate
-                      the prices of houses&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;used numpy and panda to do linear regression and
+								estimate
+								the prices of houses&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/download-1.png" style="width:103%;">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/download-1.png"
+                   style="width:103%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;used networkx to create networks based on cost,
-                        capacities, and demands&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;used networkx to create networks based on cost,
+								capacities, and demands&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/download-4.png" style="width:106%; ">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/download-4.png"
+                   style="width:106%; ">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;used numpy, panda and seaborn to create multiple kinds
-                        of graphs that classify phone prices (pt 1)&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;used numpy, panda and seaborn to create multiple
+								kinds
+								of graphs that classify phone prices (pt 1)&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/download-3.png" style="width:71%; margin-left:15%;">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/download-3.png"
+                   style="width:71%; margin-left:15%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;"" (pt 2)&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;"" (pt 2)&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/newplot.png" style="width:110%;">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/newplot.png"
+                   style="width:110%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;"" (pt 3)&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;"" (pt 3)&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/newplot copy 2.png" style="width:82%; margin-left:5%;">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/newplot copy 2.png"
+                   style="width:82%; margin-left:5%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                <div class = "tooltip">
-                    <a>&lt;<span class = "pink">li</span>&gt;"" (pt 4)&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;"" (pt 4)&lt;/<span class="pink">li</span>&gt;</a>
 
-                    <span class = "tooltiptext3">
-              <img src="../images/pbl/newplot copy.png" style="width:82%; margin-left:5%;">
+							<span class="tooltiptext3">
+              <img src="../images/pbl/newplot copy.png"
+                   style="width:82%; margin-left:5%;">
                     </span>
-                </div>
-                <br>
+						</div>
+						<br>
 
-                </div>
-                &lt;/<span class = "pink">ul</span>&gt;
-            </div>
-        &lt;/<span class = "pink">p</span>&gt;  
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
 
-    </div>
-    &lt;/<span class = "pink">body</span>&gt;
+			</div>
+			&lt;/<span class="pink">body</span>&gt;
 
-    </div>
+		</div>
 
-    &lt;/<span class = "pink">html</span>&gt;
-    </body>
+		&lt;/<span class="pink">html</span>&gt;
+	</div>
+</div>
+</body>
 
 </html>

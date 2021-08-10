@@ -2,106 +2,135 @@
 <html>
 <head>
 	<title> hyphen-hacks </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt;hyphen-hacks&lt;/<span
-			class =
-					"pink">title</span>&gt;
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
 		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">
-			head of design (2017 - 2018)
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			<a href = "https://hyphen-hacks.com/">hyphen-hacks </a> is an annual twenty-four
-			hour hackathon for high school students across the bay area that takes place at lick-wilmerding high
-			school (lwhs). in 2017, me and a group of high schoolers planned, fundraised, and organized the first
-			student-run hackathon at lwhs. we were able to serve 200+ attendees, partnering with 10+ sponsors.
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
-
-
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "role
-		"</span>&gt;
-		<div class = "content">
-			my role as head of designe included:
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt;hyphen-hacks&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="loader"
+				     class="center"></div>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			&lt;<span class = "pink">ul</span>&gt;
-			<div class = "content">
-				<div class = "tooltip">
-					<a>&lt;<span class = "pink">li</span>&gt;
-						designing logo and stickers
-						&lt;/<span class = "pink">li</span>&gt;</a>
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					head of design (2017 - 2018)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					<a href="https://hyphen-hacks.com/">hyphen-hacks </a> is an annual twenty-four
+					hour hackathon for high school students across the bay area that takes place at lick-wilmerding high
+					school (lwhs). in 2017, me and a group of high schoolers planned, fundraised, and organized the
+					first
+					student-run hackathon at lwhs. we were able to serve 200+ attendees, partnering with 10+ sponsors.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
-					<span class = "tooltiptext3">
+
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "role
+		"</span>&gt;
+				<div class="content">
+					my role as head of designe included:
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;
+								designing logo and stickers
+								&lt;/<span class="pink">li</span>&gt;</a>
+
+							<span class="tooltiptext3">
 						i designed the logos and stickers using adobe photoshop.
-                      <img src="../images/hh.PNG" style="background-color:white" class = "image">
+                      <img src="../images/hh.PNG"
+                           style="background-color:white"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
-				<div class = "tooltip">
-					<a>&lt;<span class = "pink">li</span>&gt;
-						designing t-shirts and hoodies and creating maps and posters for the event
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a>&lt;<span class="pink">li</span>&gt;
+								designing t-shirts and hoodies and creating maps and posters for the event
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						i designed the swag using adobe illustator and the maps using adobe photoshop.
-                      <img src="../images/participantTshirt2.png" style="background-color:white" class = "image">
+                      <img src="../images/participantTshirt2.png"
+                           style="background-color:white"
+                           class="image">
                     </span>
+						</div>
+						<br>
+
+						&lt;<span class="pink">li</span>&gt;
+						reaching out to potential sponsors and fundraising
+						&lt;/<span class="pink">li</span>&gt;
+						<br>
+
+						&lt;<span class="pink">li</span>&gt;
+						facilitating the actual 24-hour event, helping with catering, set-up and clean-up
+						&lt;/<span class="pink">li</span>&gt;
+						<br>
+
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
 				</div>
-				<br>
-
-				&lt;<span class = "pink">li</span>&gt;
-				reaching out to potential sponsors and fundraising
-				&lt;/<span class = "pink">li</span>&gt;
-				<br>
-
-				&lt;<span class = "pink">li</span>&gt;
-				facilitating the actual 24-hour event, helping with catering, set-up and clean-up
-				&lt;/<span class = "pink">li</span>&gt;
-				<br>
+				&lt;/<span class="pink">p</span>&gt;
 
 			</div>
-			&lt;/<span class = "pink">ul</span>&gt;
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>

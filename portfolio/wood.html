@@ -2,122 +2,156 @@
 <html>
 <head>
 	<title> wood </title>
-	<link rel = "stylesheet" href = "../css/general_style.css">
-	<link rel = "stylesheet" href = "../css/archive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+	      href="../css/general_style.css">
+	<link rel="stylesheet"
+	      href="../css/archive.css">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1">
+	<link rel="preconnect"
+	      href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+	      href="https://fonts.gstatic.com"
+	      crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+	      rel="stylesheet">
+	<script src="../js/sideNav.js"></script>
+	<script type="text/javascript"
+	        src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <script type="text/javascript">
         $(document).ready(function() {
         $('#nav-container').load('../nav.html');
         });
-    </script>
+
+        $(document).ready(function() {
+        $('#sideNav-container').load('../sideNav.html');
+        });
+
+
+</script>
 
 
 <body>
-&lt;!<span class = "pink">DOCTYPE</span> <span class = "purple">html</span>&gt;
-<br>
-&lt;!<span class = "pink">html</span>&gt;
-<div class = "content">
-	&lt;<span class = "pink">head</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">title</span>&gt; lick wilmerding high School - technical arts : joinery and
-		turning&lt;/<span
-			class =
-					"pink">title</span>&gt;
+<div id="sideNav-container"></div>
+<div id="main">
+	<button id="openBtn"
+	        onclick="nav()"> >>
+	</button>
+	<div id="text">
+		&lt;!<span class="pink">DOCTYPE</span> <span class="purple">html</span>&gt;
 		<br>
-		<div id="loader" class="center"></div>
-		<div id="nav-container"></div>
-	</div>
-	&lt;/<span class = "pink">head</span>&gt;
-	<br>
-	&lt;<span class = "pink">body</span>&gt;
-	<div class = "content">
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "about"</span>&gt;
-		<div class = "content">
-			joinery and turning (spring 2019)
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			i took this class in the spring semester of my senior year at lick-wilmerding high school. I wanted to
-			take this class because for most of my shop classes, I had used cnc machines for the majority of my
-			project, but in the wood shop, we will primarily use lathes, band saws, table saws, edge sanders, planner,
-			cnc router, laser cutters, 3d printers, plasma cutter, and other tools.
-			<br>&lt;<span class = "pink">br</span>&gt;<br>
-			unlike the other technical arts courses which were more software or cnc focused, I was able to learn more
-			handskills like applying major wood joinery techniques (finger, dove, butt and miter joints) and wood
-			turning.
-		</div>
-		&lt;/<span class = "pink">p</span>&gt;
-		<br>
-		<br>
-
-
-		&lt;<span class = "pink">p</span> <span class = "green">id</span> = <span class = "yellow"> "projects
-		"</span>&gt;
-		<div class = "content">
-			here are the projects i worked on (click to see process, hover to see summary):
+		&lt;!<span class="pink">html</span>&gt;
+		<div class="content">
+			&lt;<span class="pink">head</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">title</span>&gt; lick wilmerding high School - technical arts : joinery and
+				turning&lt;/<span
+					class=
+							"pink">title</span>&gt;
+				<br>
+				<div id="loader"
+				     class="center"></div>
+				<div id="nav-container"></div>
+			</div>
+			&lt;/<span class="pink">head</span>&gt;
 			<br>
-			&lt;<span class = "pink">ul</span>&gt;
-			<div class = "content">
+			&lt;<span class="pink">body</span>&gt;
+			<div class="content">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "about"</span>&gt;
+				<div class="content">
+					joinery and turning (spring 2019)
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					i took this class in the spring semester of my senior year at lick-wilmerding high school. I wanted
+					to
+					take this class because for most of my shop classes, I had used cnc machines for the majority of my
+					project, but in the wood shop, we will primarily use lathes, band saws, table saws, edge sanders,
+					planner,
+					cnc router, laser cutters, 3d printers, plasma cutter, and other tools.
+					<br>&lt;<span class="pink">br</span>&gt;<br>
+					unlike the other technical arts courses which were more software or cnc focused, I was able to learn
+					more
+					handskills like applying major wood joinery techniques (finger, dove, butt and miter joints) and
+					wood
+					turning.
+				</div>
+				&lt;/<span class="pink">p</span>&gt;
+				<br>
+				<br>
 
-				<div class = "tooltip">
-					<a href =
-							   "https://docs.google.com/presentation/d/e/2PACX-1vSn_RHQNZ1Gv9bHd0VO20uO0OuqxI1-6oGXR8N4P6dRnsINnfIWEQ_UDoQ510M-7rVkcAYI06irZyN_/pub?start=false&loop=false&delayms=3000" target=”_blank”>&lt;<span class = "pink">li</span>&gt;
-						phone holder project
-						&lt;/<span class = "pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+				&lt;<span class="pink">p</span> <span class="green">id</span> = <span class="yellow"> "projects
+		"</span>&gt;
+				<div class="content">
+					here are the projects i worked on (click to see process, hover to see summary):
+					<br>
+					&lt;<span class="pink">ul</span>&gt;
+					<div class="content">
+
+						<div class="tooltip">
+							<a href=
+									   "https://docs.google.com/presentation/d/e/2PACX-1vSn_RHQNZ1Gv9bHd0VO20uO0OuqxI1-6oGXR8N4P6dRnsINnfIWEQ_UDoQ510M-7rVkcAYI06irZyN_/pub?start=false&loop=false&delayms=3000"
+							   target=”_blank”>&lt;<span class="pink">li</span>&gt;
+								phone holder project
+								&lt;/<span class="pink">li</span>&gt;</a>
+
+							<span class="tooltiptext3">
 						<br>
 						for the phone holder project, with a partner, we were assigned a project to make a phone
 						holder than fit within a 8x8x8 box, was less than one pound, is functional, and uses at least
 						2 cnc machines and 2 materials. we used a router on a block of wood and 3d printed the backing.
-                      <img src="../images/wood/phoneholder.png" class = "image">
+                      <img src="../images/wood/phoneholder.png"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
-				<div class = "tooltip">
-					<a href =
-							   "https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						joinery personal project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a href=
+									   "https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								joinery personal project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br>
 						this is my joinery project, a jewelry box for my mother with a secret compartment in the bottom.
-                      <img src="../images/wood/joining.JPG" class = "image">
+                      <img src="../images/wood/joining.JPG"
+                           class="image">
                     </span>
-				</div>
-				<br>
+						</div>
+						<br>
 
-				<div class = "tooltip">
-					<a href =
-							   "https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000" target="_blank">&lt;<span class = "pink">li</span>&gt;
-						turning personal project
-						&lt;/<span class = "pink">li</span>&gt;</a>
+						<div class="tooltip">
+							<a href=
+									   "https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000"
+							   target="_blank">&lt;<span class="pink">li</span>&gt;
+								turning personal project
+								&lt;/<span class="pink">li</span>&gt;</a>
 
-					<span class = "tooltiptext3">
+							<span class="tooltiptext3">
 						<br>
 						this is the turning part of the personal project requirement, a tumbler for myself.
-                      <img src="../images/wood/turning.JPG" class = "image">
+                      <img src="../images/wood/turning.JPG"
+                           class="image">
                     </span>
+						</div>
+						<br>
+
+					</div>
+					&lt;/<span class="pink">ul</span>&gt;
 				</div>
-				<br>
+				&lt;/<span class="pink">p</span>&gt;
 
 			</div>
-			&lt;/<span class = "pink">ul</span>&gt;
+			&lt;/<span class="pink">body</span>&gt;
+
 		</div>
-		&lt;/<span class = "pink">p</span>&gt;
 
+		&lt;/<span class="pink">html</span>&gt;
 	</div>
-	&lt;/<span class = "pink">body</span>&gt;
-
 </div>
-
-&lt;/<span class = "pink">html</span>&gt;
 </body>
 
 </html>
