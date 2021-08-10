@@ -5,6 +5,9 @@ body {
 	width:85%;
 	height:100vh;
 	word-wrap: break-word;
+
+  margin: 0;
+  padding: 0;
 }
 
 .image {
@@ -16,7 +19,6 @@ a {
   	border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
   	display: inline-block;
   	color:white;
-  transition: 0.3s;
 }
 
 a:hover{
@@ -166,14 +168,14 @@ a:hover .purple {
 #openBtn {
   cursor: pointer;
   background-color: #202020;
-  color: rgba(150, 150, 150, 0.4);
+  color: rgba(150, 150, 150, 0.7);
   padding: 10px 15px;
   border: none;
   border-right: 1px dotted rgba(150, 150, 150, 0.4);
   margin-right:2%;
   margin-left:0%;
   margin-top:-1%;
-  height: 100%;
+  height: 100vh;
   float:left;
 }
 
@@ -182,5 +184,5 @@ a:hover .purple {
 }
 
 #text {
-    padding-left:5%;
+    padding-left:7%;
 }
