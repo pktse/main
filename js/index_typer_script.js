@@ -34,6 +34,7 @@ function Delete() {
       clearInterval(interval);
   }
 }
-
-Type()
-// interval = setInterval(Type, 100);
+if(!localStorage.getItem("visited")){
+  Type()
+   localStorage.setItem("visited",true);
+}
