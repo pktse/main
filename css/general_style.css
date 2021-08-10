@@ -50,6 +50,7 @@ a:hover .purple {
 
 .sideNavContent a {
 	margin-left: 5%;
+  white-space: nowrap;
 }
 
 .pink {
@@ -146,6 +147,7 @@ a:hover .purple {
   background-color: #232323;
   overflow-x: hidden;
   padding-top: 1%;
+  white-space: nowrap;
 }
 
 .sidebar a {
